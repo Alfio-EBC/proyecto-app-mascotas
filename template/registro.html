@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="/js/formulario.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="/css/estilosapp.css" />
+        <title>Pet Clinic</title>
+    </head>
+    <body>
+        <main class="PaginaPrincipal fade-in">
+            <section>
+                <form id="basicForm">
+                    <h2>Datos dueño de la mascota</h2>
+                    
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" />
+                    <span class="error" id="errorNombre"></span>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" />
+                    <span class="error" id="errorEmail"></span>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="text" id="telefono" name="telefono" />
+                    <span class="error" id="errorTelefono"></span>
+
+                    <h2>Datos mascota</h2>
+
+                    <label for="telefono">Nombre Mascota:</label>
+                    <input type="text" id="nombreMascota" name="nombreMascota" />
+                    <span class="error" id="errorNombreMascota"></span>
+                    <label for="telefono">Edada Mascota:</label>
+                    <input type="number" id="edadMascota" name="edadMascota" />
+                    <span class="error" id="erroredadMascota"></span>
+                    <label for="tipoMascota">Tipo de Mascota:</label>
+                    <span class="error" id="errorTipo"></span>
+                    <select id="tipoMascota" name="tipoMascota">
+                        <option value="">Seleccione el tipo</option>
+                        <option value="Perro">Perro</option>
+                        <option value="Gato">Gato</option>
+                    </select>
+                    <br />
+                    <br />
+                    <label><input type="checkbox" id="checkboxuno" value="primer_checkbox" /> Autorizo el tratamiento de mis datos personales.</label><br />
+                    <label><input type="checkbox" id="checkboxdos" value="segundo_checkbox" />Desea recibir actualizaciones de nuestros servicios</label><br />
+                    <button class="btn-enviar" type="submit">Enviar</button>
+                </form>
+
+                <div id="resultados"></div>
+            </section>
+        </main>
+    </body>
+</html>

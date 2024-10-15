@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/js/formulariocita.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="/css/estilosapp.css" />
+    <title>Pet Clinic</title>
+</head>
+<body>
+    <main class="PaginaPrincipal">
+        <section class="fade-in">
+            <form id="formulario_cita">
+                <h2>Agenda el día de su cita</h2>
+                <label>Agende una hora especifica en el fomrulario</label><br><br>
+                <label for="telefono">Fecha:</label>
+                <input type="date" id="Fecha" name="telefono" />
+                <span class="error" id="errorFecha"></span>
+                <br><br>
+                <label for="hora1">Hora 1:</label>
+                <input type="time" id="hora1" name="hora1" />
+                <label for="hora2">Hora 2:</label>
+                <input type="time" id="hora2" name="hora2" />
+                <label for="hora3">Hora 3:</label>
+                <input type="time" id="hora3" name="hora3" />
+                <label for="hora3">Hora 4:</label>
+                <input type="time" id="hora3" name="hora3" />
+                <br><br> <br><br>
+                <label><input type="checkbox" id="checkboxuno" value="primer_checkbox" /> La hora de la cita puede estar
+                    sujeta a acambios.</label><br />
+                <button class="btn-enviar" type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
+
